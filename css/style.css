@@ -1,0 +1,685 @@
+@font-face {
+    font-family: 'Abolition';
+    src: url('../fonts/Abolition-font.ttf');
+
+}
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    color: #fff;
+}
+
+body{
+    background-color: rgb(0,0,0);
+}
+
+#pt-br{
+    display: none;
+}
+
+main{
+    padding-top: 10px;
+}
+
+/*Change Language-----------------------------------------------------------------------*/
+
+#changeLang{
+    display: flex;
+    position: fixed;
+    bottom: 0px;
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 5px;
+    margin-left: 87vw;
+    margin-bottom: 5px;
+    
+}
+.brands {
+    width: 45px;
+    height: 31px;
+    background: url(../img/brands.png);
+    background-size: 900px;
+    margin-left: 3px;
+    margin-right: 3px;
+    border: none;
+}
+
+#usa {
+    background-position: -427px -44px;
+}
+
+#brazil {
+    background-position: -59px -381px;
+}
+
+
+/*Header--------------------------------------------------------------------------------*/
+
+header{
+    height:110px;
+    width: 100vw;
+    top: 0px;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 1);
+    
+    
+}
+
+#nav2{
+    display: none;
+    cursor: pointer;
+}
+
+#nav1{
+    display: flex;
+    flex-wrap: nowrap;
+    font-family: 'Abolition';
+    font-size: 30px;
+    padding-left: 43vw;
+    letter-spacing: 1px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.li1{
+    padding-left: 30px;
+    
+}
+
+.ul2 li a{
+    text-decoration: none;
+    font-size: 20px;
+    
+}
+
+header img{
+    height: 90px;
+    border-radius: 100%;
+    margin-left: 3vw;
+}
+
+.ul2{
+    display: none;
+}
+
+.ul2{
+    padding-left: -15px;
+}
+
+.li1:hover {
+    text-decoration: underline red;
+    
+}
+
+.li1:hover #schedule{
+    text-decoration: underline red;
+}
+
+.li1:hover .ul2{
+    display: block;
+    width: 50px;
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+}
+
+.li1:hover #team{
+    display: block;
+    width: 100px;
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+}
+
+.li1:hover #NM{
+    display: block;
+    width: 100px;
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+}
+
+.ul2 li a:hover{
+    color: red;
+    transition: .3s;
+}
+
+.li1 #schedule{
+    text-decoration: none;
+}
+
+/*Table---------------------------------------------------------------------------------*/
+
+#table{
+    background-color: #ffffff;
+    padding-top: 90px;
+    padding-bottom: 80px;
+    height: 60vh;
+    overflow: hidden;
+}
+
+/*Aqui é para editar a revisão da divisão vermelha*/
+h3{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+/*Aqui é para editar as imagens dos jogadores*/ 
+.jog{
+    width: 8vw;
+    height: 8vh;
+}
+/*Aqui é para editar os nomes na tabela*/
+.tab{
+    color: black;
+}
+
+th{
+    color: black;
+    border: 1px solid black;
+    padding: 5px;
+    background-color: #fff;
+}
+
+.bod{
+    border: 1px solid black;
+    padding: 5px;
+    background-color: #fff;
+}
+
+tr{
+    border: 1px solid black;
+    padding: 5px;
+}
+
+/*Aqui é para mudar a tabela*/
+
+#tabi{
+    height: 40vh; 
+    width: 85vw;
+    position: relative;
+    padding-top: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*Aqui é para tirar a borda do primeiro quadrinho*/
+
+
+#setabi{
+    margin-left: 7vw;
+    margin-bottom: 10vh;
+    margin-top: 5vh;
+}
+
+/*Body----------------------------------------------------------------------------------*/
+
+.white{
+    min-height: 200px;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.3);
+    
+}
+.white p{
+    color: white;
+    font-size: 20px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    padding: 10px 30px 10px 15px;
+    text-align: justify;
+}
+
+.red{
+    height: 65px;
+    background-color: rgba(255, 0, 0, 0.7);
+    text-align: center;
+    font-family: 'Abolition';
+}
+.red h1{
+    color: black;
+    margin-top: 2px;
+    font-size: 50px;
+}
+
+/*Membership----------------------------------------------------------------------------*/
+.membership img{
+    width: 100vw;
+}
+
+/*Video--------------------------------------------------------------------------------*/
+
+.section{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(../img/Scotiabank.jpg);
+}
+
+#video{
+    position: relative;
+    height: 90vh;
+    overflow-y: hidden;
+
+   
+}
+#video h2{
+    
+    letter-spacing: 5px;
+    font-size: 50px;
+    font-family: 'Abolition';
+    color: #fff;
+    
+}
+
+
+.container-video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#vid1 iframe{
+    border: none;
+    height: 80vh;
+    width: 72vw;
+}
+
+
+/*Form---------------------------------------------------------------------------------*/
+
+.form{
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(../img/background-form.png);
+    margin-top: -3px;
+    font-family: 'Abolition';
+    padding: 20px 0px;
+}
+.form h2{
+    font-size: 50px;
+    transition: 1s;
+    color: #fff;
+    letter-spacing: 5px;
+}
+.form h2:hover{
+    letter-spacing: 10px;
+    transition: 1s;
+}
+.form label{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 20px;
+    color: #fff;
+}
+.form input{
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px white solid;
+    width: 300px;
+}
+
+.form textarea{
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px white solid;
+}
+
+.form .btn-form{
+    border: 2px black solid;
+    border-radius: 10px;
+    height: 30px;
+    width: 150px;
+    background-color: red;
+    color: #fff;
+}
+.form .btn-form2{
+    margin-top: 5px;
+    border: 2px black solid;
+    border-radius: 10px;
+    height: 30px;
+    width: 150px;
+    color: black;
+    background-color: white;
+}
+
+/*Modals--------------------------------------------------------------------------------*/
+
+#modal-menu{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: -15px;
+    padding-left: 50vw;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+}
+
+/*-----------------------------------------------------------------------------------*/
+
+.li1-menu{
+    padding-left: 30px;
+    font-size: 40px;
+}
+
+.ul2-menu li a{
+    text-decoration: none;
+    font-size: 20px;
+    
+}
+
+.ul2-menu{
+    display: none;
+}
+
+.ul2-menu{
+    padding-left: -15px;
+}
+
+
+.li1-menu .schedule-menu{
+    text-decoration: none;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    color: red;
+}
+
+#modal-menu2{
+    margin-top: 15px;
+    background-color: black;
+    padding-bottom: 100%;
+    
+}
+
+.btn-menu{
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 40px;
+    border: none;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    color: red;
+}
+
+.li1-menu{
+    padding: 5px;
+    padding-left: 10px;
+    margin: 2px;
+    border-radius: 2px;
+    background-color: rgb(41, 44, 44);
+}
+
+.li1-menu ul{
+    display: none;
+    width: 250px;
+    
+}
+
+.li1-menu ul li{
+    border-radius: 5px;
+    margin: 2px;
+    background-color: rgb(255, 255, 255);
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.ul2-menu li a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/*-=-------------------------------------------------------------------------*/
+#dv-modal{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+}
+
+#div-modal{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+}
+
+#modal-content{
+    border: 3px solid rgba(128, 128, 128, 0.7);
+    border-radius: 30px;
+    margin: 0 auto;
+    margin-top: 10%;
+    max-width: 600px;
+    background-color: rgb(107, 16, 16);
+    padding: 10px;
+    box-shadow: 0 0 2px #fff;
+    height: 60vh;
+    width: 40vw;
+}
+
+/*Aqui é pra editar o gif do modal*/
+
+#bal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*Aqui é para editar o botão de fechar o modal*/
+
+#bot1{
+    width: 2vw;
+    display: flex;
+    float:right;
+    border: 2px solid black;
+    border-radius: 30px;
+}
+
+/*Aqui é para editar o texto do modal*/
+
+#modal-body{
+    padding-top: 60px;
+}
+
+h3{
+    text-align: center;
+    color: white;
+}
+
+/*Footer----------------------------------------------------------------------------------------------*/
+
+#high-body{
+    display: grid;
+    grid-template-columns: 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%;
+    padding: 20px;
+}
+#social-media{
+    text-align: center;
+}
+#social-media2{
+    display: none;
+}
+#copyright{
+    font-size: 12px;
+}
+footer div{
+    padding: 30px 0px;
+}
+footer{
+    
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    background-color: black;
+    color: aliceblue;
+    font-family: Barlow, sans-serif;
+}
+footer a{
+    text-decoration: none;
+    color: aliceblue;
+}
+footer li{
+    list-style: none;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+footer h2{
+    font-size: 16px;
+    padding-bottom: 30px;
+}
+
+/*Responsividade---------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 1000px){
+    /*Header--------------------------------------------------------------------------------*/
+
+    #nav1{
+        display: flex;
+        flex-wrap: nowrap;
+        font-family: 'Abolition';
+        font-size: 30px;
+        padding-left: 0px;
+        letter-spacing: 1px;
+        transition: .3s;
+        padding-left: 10vw;
+    }
+
+}
+
+
+
+
+
+@media screen and (max-width: 760px) {
+    
+    /*Change Language-----------------------------------------------------------------------*/
+
+    #changeLang{
+        margin-left: 5px;
+        
+        
+    }
+
+
+    /*table----------------------------------------------------------------------------------*/
+
+    #tabi{
+        display: none;  
+    }
+
+    /*Video--------------------------------------------------------------------------------*/
+
+
+    #video{
+        position: relative;
+        height: 90vh;
+        overflow-y: hidden;
+       
+    }
+    #video h2{
+        position: absolute;
+        letter-spacing: 5px;
+        font-size: 50px;
+        font-family: 'Abolition';
+        color: #fff;
+        margin-top: 300px;
+    }
+    
+    #vid1{
+        margin-top: 35px;
+        margin-bottom: 35px;
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%;  
+        margin-top: 400px;
+        
+    }
+    
+    .container-video{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #vid1 iframe{
+        border: none;
+        height: 39.38vh;
+        width: 70vw;
+    }
+
+
+}
+
+@media screen and (max-width: 650px){
+
+    /*Header--------------------------------------------------------------------------------*/
+    header{
+        grid-template-columns: 50% 50%;
+    }
+    
+    #nav1{
+        display: none;
+        
+    }
+
+    #nav2{
+        display: block;
+        margin-left: 44%;
+        
+    }
+
+    #nav2:hover{
+        opacity: .5;
+    }
+
+    #nav2 button{
+        background-color: Transparent;
+        background-repeat:no-repeat;
+        border: none;
+        cursor:pointer;
+        overflow: hidden;
+        outline:none;
+    }
+
+    /*Video--------------------------------------------------------------------------------*/
+
+    #vid1 iframe{
+        height: 30vh;
+        width: 90vw;
+    }
+
+    /*Footer----------------------------------------------------------------------------------------------*/
+
+    #high-body{
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20% ;
+        
+    }
+
+    #social-media{
+        display: none;
+    }
+
+    #social-media2{
+        display: block;
+        text-align: center;
+    }
+
+    #social-media2 a{
+        margin: 0px 10px;
+    }
+
+}
